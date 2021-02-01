@@ -1,0 +1,26 @@
+UEFI and Legacy USB Recovery Disc
+1. GParted Live USB from https://sourceforge.net/projects/gparted
+   Additional packages added: exfat-utils, kexec-tools, chntpw, following
+   https://gparted.org/add-packages-in-gparted-live.php
+
+2. GRUB4DOS from https://sourceforge.net/projects/grub4dos
+   Can be loaded through modified syslinux/syslinux.cfg
+
+3. Custom built BIOS iPXE from https://git.ipxe.org/ipxe.git
+   Can be loaded through modified syslinux/syslinyx.cfg
+
+4. Custom built UEFI iPXE from https://git.ipxe.org/ipxe.git
+   Can be loaded through modified boot/grub/grub.cfg
+
+5. UEFI memtest86 from https://memtest86.com/download.htm
+   Can be loaded through modified boot/grub/grub.cfg
+
+6. Windows PE created with https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive
+   Can be loaded through modified boot/grub/grub.cfg or menu.lst
+
+7. Hiren's boot CD PE from https://www.hirensbootcd.org/files/HBCD_PE_x64.iso,
+   unpacked to a partition.
+   Can be loaded through modified boot/grub/grub.cfg or menu.lst
+
+All UEFI programs have an ia32 version and a x86 version.
+Except for Grub2, which has the EFI name boot, other programs have been renamed.

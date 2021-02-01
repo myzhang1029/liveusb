@@ -1,0 +1,58 @@
+# This is a sample menu.lst file. You should make some changes to it.
+# The old install method of booting via the stage-files has been removed.
+# Please install GRLDR boot strap code to MBR with the bootlace.com
+# utility under DOS/Win9x or Linux.
+
+color blue/green yellow/red white/magenta white/magenta
+timeout 30
+default /default
+
+title Load NTLDR of Windows NT/2K/XP
+fallback 2
+find --set-root --ignore-floppies /ntldr
+chainloader /ntldr
+
+title Load BOOTMGR of Windows VISTA
+fallback 3
+find --set-root --ignore-floppies /bootmgr
+chainloader /bootmgr
+
+title Load CMLDR, the Recovery Console of Windows NT/2K/XP
+fallback 4
+find --set-root --ignore-floppies /cmldr
+chainloader /cmldr
+#####################################################################
+# write string "cmdcons" to memory 0000:7C03 in 2 steps:
+#####################################################################
+# step 1. Write 4 chars "cmdc" at 0000:7C03
+write 0x7C03 0x63646D63
+# step 2. Write 3 chars "ons" and an ending null at 0000:7C07
+write 0x7C07 0x00736E6F
+
+title Load IO.SYS of Windows 9x/Me
+fallback 5
+find --set-root /io.sys
+chainloader /io.sys
+
+title Hiren's Windows PE x64
+fallback 6
+chainloader (hd0,0)/bootmgr
+
+title x86 Windows PE
+fallback 7
+chainloader (hd0,1)/bootmgr
+
+title GRUB4DOS commandline
+commandline
+
+title floppy (fd0)
+chainloader (fd0)+1
+rootnoverify (fd0)
+
+title Reboot
+reboot
+
+title Halt
+halt
+
+
