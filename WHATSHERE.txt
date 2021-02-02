@@ -1,6 +1,6 @@
 UEFI and Legacy USB Recovery Disc
-1. GParted Live USB from https://sourceforge.net/projects/gparted
-   Additional packages added: exfat-utils, kexec-tools, chntpw, following
+1. GParted Live USB 1.2.0-1 i686 from https://sourceforge.net/projects/gparted
+   Additional packages added: kexec-tools, chntpw, following
    https://gparted.org/add-packages-in-gparted-live.php
 
 2. GRUB4DOS from https://sourceforge.net/projects/grub4dos
