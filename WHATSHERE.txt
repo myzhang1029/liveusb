@@ -16,6 +16,7 @@ UEFI and Legacy USB Recovery Disc
    Can be loaded through modified boot/grub/grub.cfg
 
 6. Windows PE created with https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive
+   Modified to dual-boot x86 and x64 versions following https://deploymentresearch.com/creating-a-dual-boot-winpe-5-0-boot-image-x86-and-x64-support/
    Can be loaded through modified boot/grub/grub.cfg or menu.lst
 
 7. Hiren's boot CD PE from https://www.hirensbootcd.org/files/HBCD_PE_x64.iso,

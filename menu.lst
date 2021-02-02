@@ -38,7 +38,7 @@ title Hiren's Windows PE x64
 fallback 6
 chainloader (hd0,0)/bootmgr
 
-title x86 Windows PE
+title Windows PE Selector
 fallback 7
 chainloader (hd0,1)/bootmgr
 
