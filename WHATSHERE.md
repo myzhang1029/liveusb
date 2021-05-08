@@ -24,17 +24,21 @@
    cp bin-i386-efi/ipxe.efi $HERE/EFI/boot/ipxeia32.efi
    ```
 
-5. UEFI memtest86 from <https://memtest86.com/download.htm>, <https://www.memtest86.com/downloads/memtest86-usb.zip>.
+5. UEFI shell from <https://github.com/tianocore/edk2/blob/UDK2018/ShellBinPkg/UefiShell/>.
    Can be loaded through modified `boot/grub/grub.cfg`.
 
-6. Windows PE created with <https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive>.
+6. UEFI memtest86 from <https://memtest86.com/download.htm>, <https://www.memtest86.com/downloads/memtest86-usb.zip>.
+   Can be loaded through modified `boot/grub/grub.cfg`.
+
+7. Windows PE created with <https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive>.
    Modified to dual-boot x86 and x64 versions following <https://deploymentresearch.com/creating-a-dual-boot-winpe-5-0-boot-image-x86-and-x64-support/>.
    Can be loaded through modified `boot/grub/grub.cfg` or `menu.lst`.
 
-7. Hiren's boot CD PE from <https://www.hirensbootcd.org/files/HBCD_PE_x64.iso>,
+8. Hiren's boot CD PE from <https://www.hirensbootcd.org/files/HBCD_PE_x64.iso>,
    unpacked to a partition.
    Can be loaded through modified `boot/grub/grub.cfg` or `menu.lst`.
 
-All UEFI programs have an ia32 version and a x86 version.
+All UEFI programs have an ia32 version and a x86 version. AArch64 versions are
+being added.
 
 Except for Grub2, which has the EFI name boot, other programs have been renamed.
