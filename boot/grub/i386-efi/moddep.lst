@@ -52,6 +52,7 @@ memdisk:
 fixvideo:
 crc64: crypto
 ata: scsi
+tpm:
 multiboot2: relocator boot net acpi linux video mmap
 gcry_idea: crypto
 cpuid: extcmd
@@ -68,7 +69,6 @@ ntfscomp: ntfs
 nativedisk:
 eval: normal
 videoinfo: video
-verifiers:
 pbkdf2: crypto
 password_pbkdf2: crypto pbkdf2 normal gcry_sha512
 font: bufio video
@@ -77,7 +77,8 @@ crypto:
 strtoull_test: functional_test
 pcidump: extcmd
 mdraid09_be: diskfilter
-normal: extcmd verifiers crypto boot bufio gettext terminal
+shim_lock:
+normal: extcmd crypto boot bufio gettext terminal
 tftp: net
 gcry_whirlpool: crypto
 fat: fshelp
@@ -104,14 +105,14 @@ usbtest: usb
 linuxefi: boot linux
 gptsync: disk
 date: datetime normal
-xnu: relocator extcmd verifiers boot random bitmap video mmap bitmap_scale macho
+xnu: relocator extcmd boot random bitmap video mmap bitmap_scale macho
 mul_test: functional_test
 bufio:
 acpi: extcmd mmap
 png: bufio bitmap
 minix2:
 cs5536:
-linux: relocator verifiers boot video mmap
+linux: relocator boot video mmap
 gcry_des: crypto
 gcry_blowfish: crypto
 part_plan:
@@ -207,7 +208,7 @@ geli: crypto pbkdf2 gcry_sha256 cryptodisk gcry_sha512
 gcry_rfc2268: crypto
 f2fs: fshelp
 ext2: fshelp
-bsd: relocator extcmd gcry_md5 cpuid verifiers crypto boot elf video mmap aout serial
+bsd: relocator extcmd gcry_md5 cpuid crypto boot elf video mmap aout serial
 terminfo: extcmd
 legacy_password_test: functional_test legacycfg
 gcry_crc: crypto
@@ -234,7 +235,7 @@ bswap_test: functional_test
 afs: fshelp
 search_label:
 reboot:
-pgp: extcmd verifiers crypto mpi gcry_sha1
+pgp: extcmd crypto mpi gcry_sha1
 efi_gop: video_fb video
 xnu_uuid_test: functional_test
 test_blockarg: extcmd normal
