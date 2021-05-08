@@ -42,3 +42,5 @@ All UEFI programs have an ia32 version and a x86 version. AArch64 versions are
 being added.
 
 Except for Grub2, which has the EFI name boot, other programs have been renamed.
+
+For updates, please see <https://myzhang1029.coding.net/public/liveusb/liveusb/git/files>.
