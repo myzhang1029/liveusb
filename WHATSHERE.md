@@ -43,4 +43,7 @@ being added.
 
 Except for Grub2, which has the EFI name boot, other programs have been renamed.
 
+The subdirectory `wifi_packages` are meant to be copied to another drive to
+reduce the size of the recovery drive. Run `install.sh` as root to enable wifi.
+
 For updates, please see <https://myzhang1029.coding.net/public/liveusb/liveusb/git/files>.

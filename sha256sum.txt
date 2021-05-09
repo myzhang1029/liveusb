@@ -619,5 +619,5 @@ a8c19af467849b5dc21c7773788e6f012e03a64dcc72a61f9ff4e42e6254bdfe  ./EFI/Microsof
 30a4a4013599a2ed337adaeb938b59c86a976c94d2abeb62de9c11878e09a968  ./EFI/Microsoft/Boot/Fonts/jpn_boot.ttf
 e8d15125e5775976a2d617f455ee93ef69fb6f3fb0ebfa463bc9e3e8a2d25950  ./EFI/Microsoft/Boot/Fonts/wgl4_boot.ttf
 9cda89e39d849df7e5b55d905d9dc71ef80660a2d6e8f1e275b983244472510b  ./EFI/Microsoft/Boot/memtest.efi
-82fc83a63d3379a23f4064bcfd626b4a478e36b031d6d87fa2195f1fa3eb990d  ./WHATSHERE.md
+e98aa4b3038cba24ad3cb64c8aa3fd10d2c3733a7e2129a7e3d52f7d24e064a8  ./WHATSHERE.md
 f3a717a9654c00a600ee54c42252c97e63246cf7c3cfc57aea3563f470ff0fae  ./live/filesystem.squashfs
