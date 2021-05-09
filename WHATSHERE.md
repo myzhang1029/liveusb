@@ -35,7 +35,7 @@
    Can be loaded through modified `boot/grub/grub.cfg` or `menu.lst`.
 
 8. Hiren's boot CD PE from <https://www.hirensbootcd.org/files/HBCD_PE_x64.iso>,
-   unpacked to a partition.
+   Image copied to `sources/hbcdx64.wim` and added to Windows Bootmgr BCD.
    Can be loaded through modified `boot/grub/grub.cfg` or `menu.lst`.
 
 All UEFI programs have an ia32 version and a x86 version. AArch64 versions are

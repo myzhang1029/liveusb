@@ -520,7 +520,7 @@ cdc52da554b0643c5fa3a62671961b0544d31102dc5cf77a3247e5cc19ef9a7c  ./boot/grub/x8
 3bdda14d76fe665d8d10a8e3930353f526b7092263d2dc9c0bf7cea5a3a7042d  ./boot/grub/x86_64-efi/appleldr.mod
 9914d50dc4ff858ea11c0a8dd6fb74fb498c5e83988efc4f98faf2541735d55f  ./boot/grub/x86_64-efi/div.mod
 4b6bf15db3a8034576ba26034497e8d4c0b29387ab1d19707a1490176d2502fb  ./boot/grub/grub.cfg
-5141572b65ebd57b89e1b8fa3dbe4a25ac565a6e47542fb77f66b1ade17397be  ./boot/BCD
+2ab54ac14b9742d517b1f8cc6588e6b52314f7e1a444383823c82c72afacc5fb  ./boot/BCD
 477f194a9b09dd085ae79894e411cf2378bdcf843adb21330672022951d9e2c0  ./boot/en-us/memtest.exe.mui
 c565a88ffd27ade33ca2e1d7df09e2edad5d7d9c406d7d04352f5cf2391e28ff  ./boot/en-us/bootmgr.exe.mui
 8df0600e10567131fe974bf2975711dd455da3eaa201bdd952b9a5dc704e4b89  ./boot/Fonts/msjh_boot.ttf
@@ -582,6 +582,7 @@ b5cc02b1b84fdab8aab3797949eb98e503cf2e69a0f117f8ed5905918f397a7e  ./live/vmlinuz
 3cd6870be6e1b8e754e9e70c570b294c96c49e85eb600b8128ab952fd5018f60  ./live/initrd.img
 a3a040a7234951d633a03b79b527825842acd2ae97c3c0cb254a20d4e7fa7365  ./sources/bootia32.wim
 9ca4ac73f7933111293ec08995f1a580af487a92b0c6817770fc9d410b497202  ./sources/bootx64.wim
+b1672e1ce3a65f38783e0756bf2c14b531b5c9406f894e6281377a5a5584b2e2  ./sources/hbcdx64.wim
 a85c3ad2bde745765f594df2e6b7ebcb041db4bbbfd62b60debe7de9530df3e8  ./en-us/bootmgr.efi.mui
 f5a995ac88f1fe08d8415488457e85deb650783679c0a63832db2dfddc50e2c8  ./.disk/archive_trace
 871ccf85a6144ed729995ce3e01520e6ac257ce6ebe411208a78780083096d84  ./.disk/mkisofs
@@ -605,7 +606,7 @@ bbeb06dab41effa4a6268db1a027a7d30c51a2bbe55dc6f0ed212f6d80de5cbf  ./EFI/boot/ipx
 57fbb915c26be3d7f80df0041741ac85462ec149b252379bac690ef435e5a62e  ./EFI/boot/ipxex64.efi
 c02f0bfd3ba86efe9647a1d8c22bd22b6f6a2445b4869ac7ca04661120ca7068  ./EFI/boot/unifont.bin
 0bac061c46874c4be597558831717787e7d5f55ba056289649a0a42449bf68c4  ./EFI/Microsoft/Boot/Resources/bootres.dll
-0cd0378a2d5e2f9c51e964aa0f38accc931f8f0bc5c4ad6a5198d2fdba4f90f5  ./EFI/Microsoft/Boot/BCD
+9f2765bdc1b683818e9208fdef547d06be18305725f234c47c6355b7832877eb  ./EFI/Microsoft/Boot/BCD
 812e0cb0674e8ae729069eb4acfc11d224d05d5c2ff68fb0cc11262cedf9fcfd  ./EFI/Microsoft/Boot/en-us/memtest.efi.mui
 350561deda1c64b885e5b350306d2e90ddfe6df61b225e247ed2cc6727a1c995  ./EFI/Microsoft/Boot/Fonts/msyh_boot.ttf
 eed9b4797e3bd7410da4e61907473576b9422dc62584c5f01c45cf43fc1bc317  ./EFI/Microsoft/Boot/Fonts/msjh_boot.ttf
@@ -619,5 +620,5 @@ a8c19af467849b5dc21c7773788e6f012e03a64dcc72a61f9ff4e42e6254bdfe  ./EFI/Microsof
 30a4a4013599a2ed337adaeb938b59c86a976c94d2abeb62de9c11878e09a968  ./EFI/Microsoft/Boot/Fonts/jpn_boot.ttf
 e8d15125e5775976a2d617f455ee93ef69fb6f3fb0ebfa463bc9e3e8a2d25950  ./EFI/Microsoft/Boot/Fonts/wgl4_boot.ttf
 9cda89e39d849df7e5b55d905d9dc71ef80660a2d6e8f1e275b983244472510b  ./EFI/Microsoft/Boot/memtest.efi
-e98aa4b3038cba24ad3cb64c8aa3fd10d2c3733a7e2129a7e3d52f7d24e064a8  ./WHATSHERE.md
+6e8f5f497b0e2661140695688462e64806d37f16642e4b0228c3a5efd2cb3b41  ./WHATSHERE.md
 f3a717a9654c00a600ee54c42252c97e63246cf7c3cfc57aea3563f470ff0fae  ./live/filesystem.squashfs
