@@ -1,6 +1,7 @@
 # UEFI and Legacy USB Recovery Disc
 
-1. GParted Live USB 1.3.0-1 i686 from <https://sourceforge.net/projects/gparted>.
+1. GParted Live USB 1.4.0-5 i686 PXE from <https://sourceforge.net/projects/gparted>.
+   Downloaded from <https://sourceforge.net/projects/gparted/files/gparted-live-stable/1.4.0-5/gparted-live-1.4.0-5-i686-pae.zip>.
    Additional packages added: `kexec-tools`, `chntpw`, following
    <https://gparted.org/add-packages-in-gparted-live.php>.
 
@@ -8,6 +9,18 @@
    Can be loaded through modified `syslinux/syslinux.cfg`.
 
 3. Custom built BIOS iPXE from <https://git.ipxe.org/ipxe.git>.
+   ```
+   NET_PROTO_IPV6
+   DOWNLOAD_PROTO_HTTPS
+   DOWNLOAD_PROTO_FILE
+   IMAGE_SCRIPT
+   IMAGE_ZLIB
+   IMAGE_GZIP
+   NSLOOKUP_CMD
+   REBOOT_CMD
+   POWEROFF_CMD
+   PING_CMD
+   ```
    Can be loaded through modified `syslinux/syslinux.cfg`.
    ```
    cd src
@@ -16,6 +29,20 @@
    ```
 
 4. Custom built UEFI iPXE from <https://git.ipxe.org/ipxe.git>.
+   We enabled
+   ```
+   NET_PROTO_IPV6
+   DOWNLOAD_PROTO_HTTPS
+   DOWNLOAD_PROTO_FILE
+   IMAGE_SCRIPT
+   IMAGE_EFI
+   IMAGE_ZLIB
+   IMAGE_GZIP
+   NSLOOKUP_CMD
+   REBOOT_CMD
+   POWEROFF_CMD
+   PING_CMD
+   ```
    Can be loaded through modified `boot/grub/grub.cfg`.
    ```
    cd src
@@ -30,7 +57,7 @@
 6. UEFI memtest86 from <https://memtest86.com/download.htm>, <https://www.memtest86.com/downloads/memtest86-usb.zip>.
    Can be loaded through modified `boot/grub/grub.cfg`.
 
-7. Windows PE created with <https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive>.
+7. Windows PE created following <https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive>.
    Modified to dual-boot x86 and x64 versions following <https://deploymentresearch.com/creating-a-dual-boot-winpe-5-0-boot-image-x86-and-x64-support/>.
    Can be loaded through modified `boot/grub/grub.cfg` or `menu.lst`.
 
