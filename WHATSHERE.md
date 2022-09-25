@@ -68,7 +68,7 @@
 All UEFI programs have an ia32 version and a x86 version. AArch64 versions are
 being added.
 
-Except for Grub2, which has the EFI name boot, other programs have been renamed.
+Except for GRUB2, which has the EFI name boot, other programs have been renamed.
 
 The subdirectory `wifi_packages` are meant to be copied to another drive to
 reduce the size of the recovery drive. Run `install.sh` as root to enable wifi.
